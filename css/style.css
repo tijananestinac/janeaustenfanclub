@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css?family=Gupter|Lora&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #dfd6cd;
+    font-family: 'Lora', serif;
+}
+h1,h2{
+    font-family: 'Gupter', serif;
+}
+.cleaner{
+    clear: both;
+}
+#wrapper{
+    background-image:url("../img/poz2edit.jpg");
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+}
+#header{
+    width:100%;
+    background-color: #dfd6cd;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo{	
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#logo h1 a{	
+    color: black;
+    text-decoration: none;	
+}
+
+#header, #menu1{	
+    display: flex;	
+    justify-content: space-around;	
+    align-items: center;
+}
+#menu ul {
+    list-style-type: none;
+}
+#menu1 li a{	
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+	text-align: center;
+    color:#000;	
+    font-size:25px;
+}
+#menu1 li a:hover{
+    color: #181b2a;
+    text-decoration: underline;
+}
+#menu1 ul li {
+    display: inline-block;
+	text-align: center;
+}
+
+#text{
+    position:absolute;
+    background-color: #dfd6cd;
+    opacity: 0.8;
+    width: 100%;
+    top: 50%;
+    text-align:center;
+    padding-top:15px;
+    padding-bottom:25px;
+}
+
+#text h2{
+    font-size: 60px;
+}
+
+#text p{
+    font-size: 30px;
+}
+  
+.podnaslov{
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #181b2a;
+}
+.podnaslov h2{
+    font-size: 40px;
+}
+.okvir{
+    width: 100%;
+}
+
+/* JANE */
+#bio{
+    width: 60%;
+    float: left;
+    padding: 25px;
+    text-align: justify;
+
+}
+#bio p{
+    font-size: 20px;
+    
+}
+#extra{
+    padding-bottom: 30px;
+}
+
+#picture{
+    width: 40%;
+    float: right;
+    padding-left: 55px;
+    padding-top: 32px;
+}
+
+#picture img{
+    width: 400px;
+}
+
+/* EVENTS */
+
+#dogadjaji{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+    text-align: justify;
+
+}
+
+#right{
+    float: right;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+}
+
+#left{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#left img{
+    width: 400px;
+}
+.txt h2{
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+.txt p {
+    font-size: 18x;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+}
+#slika{
+    padding: 10px;
+}
+
+
+/* FORMA */
+#news {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+  
+#news ul {
+    list-style-type: none;
+}
+#news li a{
+    color: black;
+    text-decoration: none;
+}
+#news li a:hover{
+    color: #181b2a;
+    text-decoration: underline;
+}
+.field{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form h2{
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+
+#btn{
+    text-align: start;
+}
+#submit{
+    width: 70px;
+    border: 2px solid #181b2a;
+    background-color: #dfd6cd;
+    padding: 10px;
+}
+#submit:hover{
+   background-color: #181b2a;
+   color: #dfd6cd;
+}
+
+label{
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+.dropdown, select ,[type=text]{
+    border: 2px solid #181b2a;
+    padding: 10px;
+    background-color: #dfd6cd;
+    opacity: 0.8;
+}
+
+
+/* BOOKS */
+
+#divBook{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    text-align: justify;
+    padding-top: 30px;
+    
+
+}
+.knjige{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    
+}
+.slika1{
+    padding-top: 22px;
+}
+.opis{
+    padding: 20px;
+}
+.knjige img{
+    width: 250px;
+}
+.knjige p {
+    padding-bottom: 20px;
+}
+.readMore,#clickMore{
+    text-decoration: none;
+    color: #dfd6cd;
+    height: 40px;
+    background-color: rgba(24,27,42,0.9);
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/* AUTHOR */
+#aboutAuthor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#myPhoto{
+    float: left;
+    width: 40%;
+}
+#aboutMe{
+    float: right;
+    width: 60%;
+    text-align: center;
+    padding: 40px;
+}
+#aboutMe p{
+    padding-top: 10px;
+}
+#aboutMe h2{
+    padding-bottom: 20px;
+}
+#myPhoto img{
+    float: right;
+    width: 250px;
+    padding-right: 20px;
+}
+
+
+/* FOOTER */
+#footer{
+    width:100%;
+    background-color: #fff;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #181b2a;
+}
+.footerContent{
+    width: 50%;
+    padding: 30px;
+}
+#footerMenu {
+    display: flex;
+    justify-content: center;
+}
+
+#footerMenu ul{
+    list-style-type: none;
+}
+#footerMenu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#footerMenu li a:hover {
+    text-decoration: underline;
+    color: #181b2a; 
+}
+
+
+.fab,.fas{
+    font-size: 30px;
+    padding: 10px;
+    color: #000000;
+}
+.au{
+    font-size: 20px;
+    padding: 0px;
+}
+
+/* JS */
+.red{
+    border: 1px solid red;
+}
+.hide{
+    display: none;
+}
+.ispis{
+    color: red;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px){
+    /* HOME */
+    #wrapper{
+        background-position: top center;
+    }
+
+    /* BIO */
+    #picture img{
+        width: 280px;
+    }
+
+    /* EVENTS */
+    #left img{
+        width: 300px;
+    }
+    #form h2{
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    #news{
+        font-size: 16px;
+        padding-bottom: 43px;
+        padding-top: 5px;
+    }
+
+    /* BOOKS */
+    .knjige img{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .podnaslov h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 15px;
+    }
+    #logo{
+        font-size: 10px;
+    }
+    #menu1 li a{
+        font-size: 20px;
+    }
+    
+    /* BIO */
+    #picture{
+        padding-left: 15px;
+    }
+    #picture img{
+        width: 250px
+    }
+    #bio p{
+        font-size: 15px;
+    }
+
+    /* EVENTS */
+    .txt h2{
+        font-size: 18px;
+    }
+    #dogadjaji{
+        display: block;
+    }
+    #left,#right{
+        width: 100%;
+        
+    }
+    #news{
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    #form h2{
+        font-size: 20px;
+    }
+    .knjige{
+        width: 100%;
+    }
+    .knjige img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .readMore,#clickMore{
+        font-size: 15px;
+        padding: 2px;
+    }
+    #header{
+        display: block;
+    }
+    #logo,#menu1{
+        width: 100%;
+    }
+    #logo{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    /* BIO*/
+    #bio{
+        width:100%;
+    }
+    #picture{
+        width:100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+    #picture img{
+        width: 350px;
+    }
+    
+    /*EVENTS*/
+    #from h2,#news{
+        font-size: 15px;
+    }
+
+    /* AUTHOR*/
+    #aboutAuthor{
+        flex-direction: column;
+    }
+    #aboutMe{
+        width: 100%;
+    }
+    #aboutMe p {
+        text-align: justify;
+    }
+    #aboutMe h2{
+        font-size: 20px;
+    }
+    #myPhoto{
+        width: 100%;
+        text-align: center;
+    }
+    #myPhoto img{
+        float:none;
+        padding: 0px;
+        width: 180px;
+    }
+
+    /* FOOTER  */
+    .fab,.fas{
+        font-size: 25px;
+        padding: 5px;
+        color: #000000;
+    }
+    
+    #footer{
+        flex-direction: column;
+        border-top: 0px;
+    }
+    .footerContent{
+        width: 100%;
+        border-top: 2px solid #181b2a;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /* HOME */
+    #logo{	
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #menu1 li a{	
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color:#000;	
+        font-size: 20px;
+    }
+    
+    #text h2{
+        font-size: 30px;
+    }
+    #text p{
+        font-size: 20px;
+    }
+
+    /* BOOKS*/ 
+    #divBook{
+        padding-left: 0px;
+    }
+    .slika1{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .opis{
+        padding-top: 20px;
+    }
+    .opis p {
+        padding-top: 5px;
+    }
+    .knjige{
+        width: 100%;
+        display: block;
+    }
+    .knjige img{
+        width: 180px;
+    }
+}
+
